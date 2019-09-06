@@ -1,8 +1,7 @@
 ---
 title: 观展览的一点拙见
 date: 2017-12-23
-categories: 随笔
-tags: 展览
+tags: 随笔
 ---
 
 ![](/image/life/6502557339172733453.png)

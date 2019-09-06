@@ -1,8 +1,7 @@
 ---
 title: 报错: Access denied for user 'xxx'@'localhost'
 date: 2017-12-31
-categories: 技术人生
-tags: node,mysql
+tags: node
 ---
 
 ![](/image/500308044_wx.jpg)

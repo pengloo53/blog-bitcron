@@ -1,8 +1,8 @@
 ---
 title: Bootstrap-Table初使用
 date: 2018-01-13
-categories: 技术
-tags: bootstrap-table
+categories: 
+tags: [编程,bootstrap-table]
 ---
 
 温故而知新。学习使用[Bootstrap Table](http://bootstrap-table.wenzhixin.net.cn/zh-cn/)已经完整的完成了一个项目，这里还是简单对**Bootstrap-Table**的使用做一个简单的介绍以及实例的演示。

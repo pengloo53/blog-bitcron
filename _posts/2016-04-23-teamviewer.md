@@ -1,9 +1,7 @@
 ---
 title: teamviewer - 好强大的一款远程协助工具
 date: 2016-04-23
-categories: 工具
-tags: [远程,teamviewer]
-toc: false
+tags: [tool,teamviewer]
 ---
 
 这是一个强大的远程协助软件，[teamviewer官网](http://www.teamviewer.com)这样介绍它：

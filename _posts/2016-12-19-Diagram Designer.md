@@ -1,9 +1,7 @@
 ---
 title: Diagram Designer - 小巧免费的流程图绘制软件
 date: 2016-12-19
-categories: 
-- 工具
-tags: [流程]
+tags: [tool,diagram]
 ---
 
 这里推荐一款小巧的流程图绘制软件，遗憾的是只是针对Windows平台。

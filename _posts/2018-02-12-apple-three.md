@@ -1,8 +1,7 @@
 ---
 title: 《苹果三剑客》之我见
 date: 2018-02-21
-categories: 读书
-tags: [苹果,乔布斯,沃兹,乔纳森]
+tags: read
 ---
 
 ![](/image/read/apple-three.png)

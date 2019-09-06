@@ -1,14 +1,11 @@
 ---
 title: 使用Nginx部署Hexo站点
 date: 2016-07-15
-categories: 
-- 技术
-- Hexo
 tags: [nginx,hexo]
 ---
 
 在公司内网环境中，搭建一个静态站点，用于保存一些相关知识文档，并通过页面的形式展现出来。静态站点生成器这里我选择的是[Hexo](https://hexo.io)（一个基于Node实现的静态博客框架），而Web服务器首选当然是[Nginx](http://nginx.org)，简单高效。
-<!-- more -->
+
 ### 1. 安装Nginx
 这里我以Windows Server为例，安装非常简单，从[官方站点页面](http://nginx.org/en/download.html)下载Nginx软件包。下载完成后，直接解压到本地目录就行了。
 

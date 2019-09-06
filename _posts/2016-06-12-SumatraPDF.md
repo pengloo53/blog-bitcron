@@ -1,9 +1,7 @@
 ---
 title: Sumatra PDF - 轻量免费的文档阅读器
 date: 2016-06-12
-categories:
-- 工具
-tags: [pdf]
+tags: [tool,pdf]
 ---
 
 虽然目前看电子书的方式已经非常丰富了，但是我相信应该还有很大一部分人仍然在阅读PDF电子书，阅读PDF电子书就需要一个好的PDF阅读器，设备还是在电脑上比较合适，PDF电子书确实不太适合在手持设备上阅读，即使是iPad mini的7.9寸屏在阅读PDF的时候体验仍是非常不佳，更别说是在手机上阅读PDF了。这里推荐一款非常轻量的PDF阅读器 - Sumatra PDF。

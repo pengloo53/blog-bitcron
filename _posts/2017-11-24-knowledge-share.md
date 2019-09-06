@@ -1,8 +1,7 @@
 ---
 title: 你所看到的那些大V大牛都是如何产生的？
 date: 2017-11-24
-categroies: 随笔
-tags: 博客
+tags: 随笔
 description: 今天分享一篇关于知识输出的文章。
 ---
 

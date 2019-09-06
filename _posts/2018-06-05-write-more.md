@@ -1,8 +1,7 @@
 ---
 title: 为什么写了这么久，还是没啥成就？
 date: 2018-06-09
-categories: 随笔
-tags: 写作
+tags: 随笔
 ---
 
 ![](/image/write.jpg)

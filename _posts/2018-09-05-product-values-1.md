@@ -1,8 +1,7 @@
 ---
 title: 不要将责任推卸给用户 - 我的产品观
 date: 2018-09-05 20:43
-categories: 随笔
-tags: 产品
+tags: [随笔,产品]
 ---
 
 ![Photo by Hossam M. Omar from Pexels](/image/pexels-photo-788967.jpeg)

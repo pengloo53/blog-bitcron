@@ -1,6 +1,6 @@
+---
 title: 了解express的路由方法 - Node实战
 date: 2017-06-23
-categories: 技术人生
 tags: [node,express,路由]
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: 你想成为一只被风吹上天的「猪」吗？
 date: 2017-11-14
-categroies: 随笔
-tags: 坚持
+tags: 随笔
 description: 没错，又是一篇激励自己的鸡汤文。。。
 ---
 

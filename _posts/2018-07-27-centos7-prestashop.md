@@ -1,7 +1,6 @@
 ---
 title: CentOS 7 搭建开源商城 prestashop
 date: 2018-07-21 14:15
-categroies: 技术
 tags: [linux,centos7,prestashop]
 ---
 

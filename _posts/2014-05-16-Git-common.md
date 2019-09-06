@@ -1,8 +1,7 @@
 ---
 title: Git 常用命令
 date: 2014-05-16 19:46:47
-tags: git  
-categories: 
+tags: [tool,git]  
 ---
 
 学会这些命令，你就可以熟练的使用 Git 工具了，什么？想精通，那是不可能的。

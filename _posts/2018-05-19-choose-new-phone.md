@@ -1,8 +1,8 @@
 ---
 title: 锤子的坚果R1，终归还是来了，但是...
 date: 2018-05-19 13:19
-categories: 随笔
-tags: phone
+categories: 
+tags: [随笔,科技]
 ---
 
 ![](/image/life/R1.png)

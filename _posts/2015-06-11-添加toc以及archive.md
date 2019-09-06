@@ -1,9 +1,6 @@
 ---
 title: Hexo站点中添加文章目录以及归档
 date: 2015-06-11
-categories:
-- 技术
-- Hexo
 tags: [hexo,toc,archive]
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: 人人都是管理者，如何「卓有成效」是关键
 date: 2018-04-26
-categories: 读书
-tags: [管理,卓有成效]
+tags: [read,管理]
 ---
 
 ![](/image/read/卓有成效管理者.png)

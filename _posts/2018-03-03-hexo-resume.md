@@ -1,8 +1,7 @@
 ---
 title: 在Hexo博客中加入自定义简历页
 date: 2018-03-03
-categories: 技术
-tags: [hexo,resume]
+tags: [hexo,简历]
 ---
 
 ![](/image/2018-03-03-11-16-09.jpg)

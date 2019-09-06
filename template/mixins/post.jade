@@ -24,6 +24,11 @@ mixin make_post(post, is_index, post_extra_class)
                             a(href=post.category.url, itemprop='url', rel='index')
                                 span(itemprop='name')= post.category.title
 
+                if post.tags
+                    .post-tags
+                        for tag in post.tags
+                            a(href='/tag/' + tag, rel='tag')= '# %s'%tag
+                            
                 if site.configs.comment
 					span.post-comments-count= '&nbsp; | &nbsp;'
 						a(href=post.url + '#comments', itemprop='discussionUrl')

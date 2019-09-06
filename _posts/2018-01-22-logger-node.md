@@ -1,7 +1,6 @@
 ---
 title: 日志 - Node实战
 date: 2018-01-22
-categories: 技术人生
 tags: [logger,node]
 ---
 

@@ -1,6 +1,6 @@
+---
 title: 不同环境下配置文件使用 - Node实战
 date: 2017-07-02
-categories: 技术人生
 tags: [node,配置文件]
 ---
 

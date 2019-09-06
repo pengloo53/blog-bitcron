@@ -1,8 +1,7 @@
 ---
 title: 你有计算过你的通勤成本吗？
 date: 2017-12-08
-categories: 随笔
-tags: 通勤成本
+tags: 随笔
 description: 每天我有超过一半的时间不是在上班，就是在上班的路上。
 ---
 

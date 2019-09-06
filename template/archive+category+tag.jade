@@ -48,7 +48,7 @@ block page_class
 
 
 block content
-	+tab(['所有文章', '分类&标签'], 2 if request.args.tab else 1)
+	+tab(['所有文章', '标签' , '分类'], 2 if request.args.tab else 1)
 		#tab
 			+posts.set_min_per_page(30)
 			section#posts.posts-collapse
@@ -77,10 +77,14 @@ block content
 				.archive_part_title= '目前共%s个标签'%site.tags.length
 				.archive_part_body: for tag in site.tags
 					tag_name = tag[0]
+					tag_count = tag[1]
 					font_size = 12 + (tag[1] - 1)*1.5
-					a(href='/tag/%s'%tag_name, style='font-size: %spx; color: #212121'%font_size)= tag_name
-
-			.archive_part
+					//- a(href='/tag/%s'%tag_name, style='font-size: %spx; color: #212121'%font_size)= tag_name
+					a(href='/tag/%s'%tag_name)
+						span= tag_name
+						span.sub_info= "(%s)"%tag_count
+		if site.categories: #tab
+			 .archive_part
 				.archive_part_title= '目前共计%s个分类'%posts.categories.length
 				.archive_part_body: for category in posts.categories
 					a(href=category.url)
