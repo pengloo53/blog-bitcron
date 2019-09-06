@@ -31,9 +31,11 @@
   border: 1px solid #eee; }
 
 .lp-statement {
+  font-size: 0.9em;
   text-align: center;
   color: #999;
   background-color: #F5F7F9;
-  padding: 15px; }
+  padding: 15px; 
+}
 
 /*# sourceMappingURL=style.css.map */

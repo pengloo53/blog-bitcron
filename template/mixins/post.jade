@@ -10,24 +10,27 @@ mixin make_post(post, is_index, post_extra_class)
                 post_time = post.date("%Y-%m-%d")
                 span.post-time
                     span.post-meta-item-icon
-                        i.fa.fa-calendar-o
+                        i.fa.fa-calendar
                     span.post-meta-item-text= '发表于 '
                     time(itemprop='dateCreated', datetime=post_time, content=post_time)= post_time
 
-
-                if post.category
-                    span.post-category= '&nbsp; | &nbsp;'
-                        span.post-meta-item-icon
-                            i.fa.fa-folder-o
-                        span.post-meta-item-text= '分类于 '
-                        span(itemprop='about')
-                            a(href=post.category.url, itemprop='url', rel='index')
-                                span(itemprop='name')= post.category.title
+                //- if post.category
+                //-     span.post-category= '&nbsp; | &nbsp;'
+                //-         span.post-meta-item-icon
+                //-             i.fa.fa-folder-o
+                //-         span.post-meta-item-text= '分类于 '
+                //-         span(itemprop='about')
+                //-             a(href=post.category.url, itemprop='url', rel='index')
+                //-                 span(itemprop='name')= post.category.title
 
                 if post.tags
-                    .post-tags
-                        for tag in post.tags
-                            a(href='/tag/' + tag, rel='tag')= '# %s'%tag
+                    span.post-category= '&nbsp; | &nbsp;'
+                        span.post-meta-item-icon
+                            i.fa.fa-tag
+                        span.post-meta-item-text= '# '
+                        span(itemprop='about')
+                            for tag in post.tags
+                                a(href='/tag/' + tag, rel='tag')= ' %s'%tag
                             
                 if site.configs.comment
 					span.post-comments-count= '&nbsp; | &nbsp;'
@@ -39,7 +42,7 @@ mixin make_post(post, is_index, post_extra_class)
 
         div(itemprop='articleBody').post-body
             if is_index
-                div= post.content.limit(100)
+                div= post.content.limit(66)
                 .post-more-link.text-center
                     a.btn(href=post.url, rel='contents')= '阅读全文 &raquo;'
             else
@@ -49,17 +52,18 @@ mixin make_post(post, is_index, post_extra_class)
         .post-footer
             if not is_index
                 div.lp-statement 
-                    span 版权声明：自由转载-非商用-非衍生-保持署名
+                    span 版权声明：
+                    a(href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh") CC BY-NC-ND 4.0
                     <br/>
                     span 微信公众号：个人学习
                     <br/>
-                    span 
-                        span 支持该博客：订阅我的
-                        a(href="https://xiaozhuanlan.com/lupeng") 小专栏
-            if not is_index and post.tags
-                .post-tags
-                    for tag in post.tags
-                        a(href='/tag/' + tag, rel='tag')= '# %s'%tag
+                    span 支持该博客：订阅我的
+                    a(href="https://xiaozhuanlan.com/lupeng") 小专栏
+
+            //- if not is_index and post.tags
+            //-     .post-tags
+            //-         for tag in post.tags
+            //-             a(href='/tag/' + tag, rel='tag')= '# %s'%tag
 
             if not is_index and (pre_one or next_one)
                 .post-nav
