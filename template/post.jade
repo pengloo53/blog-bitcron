@@ -1,0 +1,15 @@
+extends base
+from mixins.post import make_post
+
+block title
+    title= post.title
+
+block page_class
+    | page-post-detail
+
+block content
+    .posts-expand#posts
+        +make_post(post, is_index=False)
+        .post-spread
+
+	+post.comments_as_html()

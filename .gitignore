@@ -1,0 +1,20 @@
+__mw_themes
+__wiki
+
+_tmp
+_comments
+_data
+_direct
+_drafts
+
+configs
+
+# Mac
+.DS_Store
+
+.*
+!.gitignore
+
+*.log
+*.data
+*.config

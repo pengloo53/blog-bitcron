@@ -1,0 +1,15 @@
+extends base.jade
+from mixins.post import make_post
+
+block title
+    title= site.title
+
+block page_class
+    | page-home
+
+block content
+    section#posts.posts-expand
+        for post in posts
+            +make_post(post, is_index=True)
+
+    +h.paginator(style='mini')

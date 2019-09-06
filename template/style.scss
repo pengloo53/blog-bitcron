@@ -1,0 +1,50 @@
+.archive_part {
+  	text-align: center;
+	margin-bottom: 3.5em;
+	a {
+	  	display: inline-block;
+	  	margin: 10px;
+		font-size: 12px;
+	}
+	.sub_info{
+		font-size: 10px;
+		color: #666;
+	}
+}
+
+
+.post-toc{
+	a{
+		font-size: 12px;
+	}
+}
+
+.tab_item{
+	padding-top: 40px;
+}
+
+/*style patches for NexT*/
+.posts-collapse .collection-title{
+	margin: 60px auto 10px auto;
+}
+
+.posts-collapse :nth-child(3){
+	margin-top: 45px;
+}
+
+/* ad pic by lupeng */
+.ad-image{
+	margin-top: 20px;
+}
+
+.ad-image a img{
+	padding: 2px;
+	border: 1px solid #eee;
+}
+
+.lp-statement{
+	text-align: center;
+	color: #999;
+	background-color: #F5F7F9;
+	padding: 15px;
+}

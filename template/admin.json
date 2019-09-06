@@ -1,0 +1,8 @@
+{
+    "fields": [
+        "next_scheme(title='NexT Scheme', type='select', placeholder='Pisces@pisces,Muse@muse,Mist@mist')",
+        "next_sidebar_display(title='Sidebar Display', type='select', placeholder='Auto@post,Always@always,Hide and Toggle@hide,Remove@remove')",
+        "next_sidebar_position(title='Sidebar Position', type='select', placeholder='Left@left,Right@right')",
+        "next_motion(title='Use Motion', type=bool, default=True)"
+    ]
+}

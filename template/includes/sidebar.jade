@@ -1,0 +1,80 @@
+is_post = True if post else False
+.sidebar-toggle
+	.sidebar-toggle-line-wrap
+		span.sidebar-toggle-line.sidebar-toggle-line-first
+		span.sidebar-toggle-line.sidebar-toggle-line-middle
+		span.sidebar-toggle-line.sidebar-toggle-line-last
+aside#sidebar.sidebar
+	.sidebar-inner
+		if post and post.toc
+			if site.configs.show_toc
+				display_toc = True
+			else
+				display_toc = post.metadata.get('toc', True)
+		if display_toc
+			ul.sidebar-nav.motion-element
+				li(data-target='post-toc-wrap').sidebar-nav-toc.sidebar-nav-active= '文章目录'
+				li(data-target='site-overview').sidebar-nav-over-view= '站点概览'
+
+		class_section = null
+		if display_toc
+			class_section = 'site-overview sidebar-panel'
+		else
+			class_section = 'site-overview sidebar-panel sidebar-panel-active'
+		section(class=class_section)
+			.site-author.motion-element(itemprop='author')
+				img.site-author-image(src=site.avatar, alt=site.configs.admin_name, itemprop='image')
+				if site.configs.admin_name
+					p.site-author-name(itemprop='name')= site.configs.admin_name
+				if site.configs.sub_title
+					p.site-description.motion-element(itemprop='description')= site.configs.sub_title
+			nav.site-state.motion-element
+				posts_count = get_data(type='post', return_count=True)
+				categories_count = get_data(type='folder', level=[1,2], min_posts_count=1, return_count=True)
+				album_count = get_data(type='image', path='album/', level=[1,2], return_count=True)
+				tags_count = site.tags.length or 0
+				.site-state-item.site-state-posts
+					a(href='/archive')
+						span.site-state-item-count= posts_count
+						span.site-state-item-name= '日志'
+
+				if categories_count > 1: .site-state-item.site-state-categories
+					a(href='/archive?tab=categories')
+						span.site-state-item-count= categories_count
+						span.site-state-item-name= '分类'
+
+				//- .site-state-item.site-state-categories
+				//- 	a(href='/album')
+				//- 		span.site-state-item-count= album_count
+				//- 		span.site-state-item-name= '相册'
+
+				if tags_count > 1: .site-state-item.site-state-tags
+					a(href='/archive?tab=tags')
+						span.site-state-item-count= tags_count
+						span.site-state-item-name= '标签'
+
+			.feed-link.motion-element
+				a(href='/feed', rel='alternate')
+					i.fa.fa-rss
+					span RSS
+
+			if site.social_items
+				.links-of-author.motion-element: for social_item in site.social_items: span.links-of-author-item
+					a(href=social_item.url, target="_blank", title=social_item.service)
+						i(class=social_item.icon_class)
+						span= social_item.service.title()
+			//- .ad-image
+			//- 	a(href='https://agentneo.co/?rc=ozemw3gu', target="_blank")
+			//- 		img.site-ad-image(src=site.background_image, itemprop='image')
+
+		if display_toc
+			section.post-toc-wrap.motion-element.sidebar-panel.sidebar-panel-active
+				.post-toc
+					if post.toc
+						toc = post.toc
+						toc = toc.replace('<ul>', '<ol class="nav">')
+						toc = toc.replace('</ul>', '</ol>')
+						toc = toc.replace('<li>', '<li class="nav-item">')
+						.post-toc-content= toc
+					else
+						p.post-toc-empty= '此文章未包含目录'

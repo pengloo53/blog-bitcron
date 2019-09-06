@@ -1,0 +1,85 @@
+class_html = null
+if site.configs.motion
+    class_html = 'theme-next %s use-motion'%site.configs.scheme
+else
+    class_html = 'theme-next %s'%site.configs.scheme
+
+theme_scheme = site.configs.next_scheme or 'pisces'
+sidebar_position = site.configs.next_sidebar_position or 'left'
+sidebar_display = site.configs.next_sidebar_display or 'post'
+enable_motion = 'yes' if site.configs.get('next_motion', True) else ''
+
+if enable_motion
+    html_class = 'theme-next %s use-motion'%theme_scheme
+else
+    html_class = 'theme-next %s'%theme_scheme
+
+html(class=html_class)
+    head
+        block title
+		+h.headers
+		+h.load('/template/source/css/%s.css'%theme_scheme)
+		+h.load('/template/source/css/code_highlight.css')
+		+h.load("/template/style.scss")
+		+h.load("font")
+    body
+
+        container_class = 'container one-collum sidebar-position-' + sidebar_position
+        div(class='{{ container_class }} {% block page_class %}{% endblock %}')
+            .headband
+
+            header#header.header
+                .header-inner
+                    include includes/header.jade
+
+            main#main.main
+                .main-inner
+                    .content-wrap
+                        #content.content
+                            block content
+
+                    if sidebar_display != 'remove'
+                        include includes/sidebar
+
+            footer#footer.footer
+                .footer-inner
+					.copyright
+						span(itemprop='copyrightYear')= '&copy;%s'%site.now.year
+						span.with-love
+							i.fa.fa-heart
+						if site.configs.admin_name
+							span.author(itemprop='copyrightHolder')= site.configs.admin_name
+					.powered-by= 'Powered By - '
+						a.theme-link(href='https://www.bitcron.com')= 'Bitcron'
+					.theme-info= 'Theme - '
+						a.theme-link(href='/theme_info')= 'NexT'
+            .back-to-top
+                i.fa.fa-arrow-up
+
+
+		script(type='text/javascript', id='hexo.configuration')
+			var NexT = window.Next || {};
+			var CONFIG = {
+				motion: '{{enable_motion}}',
+				scheme: '{{theme_scheme}}',
+				sidebar: {"position": "{{sidebar_position}}", "display": "{{sidebar_display}}"}
+				};
+			if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+				window.Promise = null;
+			}
+		+h.load("jquery")
+		+h.load('/template/source/js/velocity.min.js')
+		+h.load('/template/source/js/velocity.ui.min.js')
+		+h.load('/template/source/js/utils.js')
+		+h.load('/template/source/js/motion.js')
+		+h.load('/template/source/js/fastclick.min.js')
+        if theme_scheme == 'pisces'
+			+h.load('/template/source/js/affix.js')
+			+h.load('/template/source/js/pisces.js')
+		if post
+			+h.load('/template/source/js/scrollspy.js')
+			+h.load('/template/source/js/post-details.js')
+
+		+h.load('/template/source/js/bootstrap.js')
+
+		block js_content
