@@ -47,6 +47,8 @@ html(class=html_class)
 						span(itemprop='copyrightYear')= '&copy;%s'%site.now.year
 						span.with-love
 							i.fa.fa-heart
+						span
+							a(href='http://www.beian.miit.gov.cn/')= '京ICP备17071687号-3'
 						if site.configs.admin_name
 							span.author(itemprop='copyrightHolder')= site.configs.admin_name
 					.powered-by= 'Powered By - '
