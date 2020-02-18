@@ -8,4 +8,4 @@ title: https 部署
 
 
 
-![image-20200120163606435](C:\Users\decad\Git\blog-bitcron\_drafts\image-20200120163606435.png)
+![image-20200120163606435](./image-20200120163606435.png)
