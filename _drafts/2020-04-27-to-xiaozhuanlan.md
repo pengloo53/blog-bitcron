@@ -1,5 +1,7 @@
 ---
-title: 
+title: 硬广一下我的产品技术专栏
+date: 2020-04-27
+tags: 小专栏
 ---
 
 有一段时间没有写这个主题的内容了，是不是放弃做产品技术相关的事情了？
@@ -57,5 +59,3 @@ title:
 同样，这个内容，我也会陆续在这里发出，希望你不要觉得无聊，不过，看看我的故事，没准你会觉得自己还挺优秀的，增强一下自信心，多好。
 
 好了，内容大概就这些，感谢阅读。
-
-Photo by **[Ekrulila](https://www.pexels.com/@ekrulila?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)** from **[Pexels](https://www.pexels.com/photo/person-holding-white-and-brown-newspaper-3957616/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)**
