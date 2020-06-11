@@ -1,6 +1,6 @@
-/*×Ô¶¨ÒåÑùÊ½£¬ÊµÊ±ÉúĞ§*/
+/*è‡ªå®šä¹‰æ ·å¼ï¼Œå®æ—¶ç”Ÿæ•ˆ*/
 
-/*³õÊ¼»¯¸ñÊ½*/
+/*åˆå§‹åŒ–æ ¼å¼*/
 
 #nice {
   line-height: 1.6;
@@ -11,13 +11,13 @@
 }
 
 #nice p {
-  padding-top: 23px;
+  padding-top: 17px;
   color: rgb(74,74,74);
   line-height: 1.75em;
   font-size: 17px;
 }
 
-/* Ò»¼¶±êÌâ */
+/* ä¸€çº§æ ‡é¢˜ */
 #nice h1 {
   text-align:center;
   background-image: url(https://my-wechat.mdnice.com/mdnice/mountain_2_20191028221337.png); 
@@ -29,18 +29,18 @@
   margin-bottom: 10px;
 }
 
-/* Ò»¼¶±êÌâÄÚÈİ */
+/* ä¸€çº§æ ‡é¢˜å†…å®¹ */
 #nice h1 .content {
   font-size: 20px;
   color: rgb(60, 112, 198);
   border-bottom:2px solid #3C7076;
 }
 
-/* Ò»¼¶±êÌâĞŞÊÎ Çë²Î¿¼ÓĞÊµÀıµÄÖ÷Ìâ */
+/* ä¸€çº§æ ‡é¢˜ä¿®é¥° è¯·å‚è€ƒæœ‰å®ä¾‹çš„ä¸»é¢˜ */
 #nice h1:after {
 }
  
-/* ¶ş¼¶±êÌâ */
+/* äºŒçº§æ ‡é¢˜ */
 #nice h2 {
   display:block;
   text-align:center;
@@ -55,11 +55,11 @@
   margin-bottom: 10px;
 }
 
-/*¶ş¼¶±êÌâÎ±ÔªËØ*/
+/*äºŒçº§æ ‡é¢˜ä¼ªå…ƒç´ */
 #nice h2:before {
 }
 
-/* ¶ş¼¶±êÌâÄÚÈİ */
+/* äºŒçº§æ ‡é¢˜å†…å®¹ */
 #nice h2 .content {
   text-align:center;
   display: inline-block;
@@ -77,7 +77,7 @@
   margin-bottom: 10px;
 }
 
-/* Èı¼¶±êÌâ */
+/* ä¸‰çº§æ ‡é¢˜ */
 #nice h3:before {
   content: "";
   background-image:url(https://my-wechat.mdnice.com/mdnice/mountain_1_20191028221337.png);
@@ -92,7 +92,7 @@
 #nice h3 {
 }
 
-/* Èı¼¶±êÌâÄÚÈİ */
+/* ä¸‰çº§æ ‡é¢˜å†…å®¹ */
 #nice h3 .content {
   font-size:16px;
   font-weight:bold;
@@ -101,17 +101,17 @@
   color:rgb(60,112,198);
 }
 
-/* Èı¼¶±êÌâĞŞÊÎ Çë²Î¿¼ÓĞÊµÀıµÄÖ÷Ìâ */
+/* ä¸‰çº§æ ‡é¢˜ä¿®é¥° è¯·å‚è€ƒæœ‰å®ä¾‹çš„ä¸»é¢˜ */
 #nice h3:after {
 }
 
-/* ÁĞ±íÄÚÈİ */
+/* åˆ—è¡¨å†…å®¹ */
 #nice li {
 }
 
-/* ÒıÓÃ
- * ×ó±ßÔµÑÕÉ« border-left-color:black;
- * ±³¾°É« background:gray;
+/* å¼•ç”¨
+ * å·¦è¾¹ç¼˜é¢œè‰² border-left-color:black;
+ * èƒŒæ™¯è‰² background:gray;
  */
 #nice blockquote {
   padding: 15px 20px;
@@ -121,41 +121,41 @@
   display:block;
 }
 
-/* ÒıÓÃÎÄ×Ö */
+/* å¼•ç”¨æ–‡å­— */
 #nice blockquote p {
   padding-top: 5px;
   font-size:15px;
   color:rgb(89,89,89);
 }
 
-/* Á´½Ó */
+/* é“¾æ¥ */
 #nice a {
   color: rgb(60, 112, 198);
   text-decoration:none;
   border-bottom: 1px solid rgb(60, 112, 198);
 }
 
-/* ¼Ó´Ö */
+/* åŠ ç²— */
 #nice strong {
   line-height: 1.75em;
   color: rgb(74,74,74);
 }
 
-/* Ğ±Ìå */
+/* æ–œä½“ */
 #nice em {
 }
 
-/* ¼Ó´ÖĞ±Ìå */
+/* åŠ ç²—æ–œä½“ */
 #nice em strong {
   color:rgb(248,57,41);
   letter-spacing:0.3em;
 }
 
-/* É¾³ıÏß */
+/* åˆ é™¤çº¿ */
 #nice del {
 }
  
-/* ·Ö¸îÏß */
+/* åˆ†å‰²çº¿ */
 #nice hr {
   height:1px;
   padding:0;
@@ -164,35 +164,35 @@
   background-image:linear-gradient(to right,rgba(60,122,198,0),rgba(60,122,198,0.75),rgba(60,122,198,0));
 }
 
-/* Í¼Æ¬ */
+/* å›¾ç‰‡ */
 #nice img {
     border-radius:4px;
     margin-bottom:25px;
 }
 
-/* Í¼Æ¬ÃèÊöÎÄ×Ö */
+/* å›¾ç‰‡æè¿°æ–‡å­— */
 #nice figcaption {
   display:block;
   font-size:12px;
   font-family:PingFangSC-Light;
 }
 
-/* ĞĞÄÚ´úÂë */
+/* è¡Œå†…ä»£ç  */
 #nice p code, #nice li code {
 	color: rgb(60, 112, 198);;
 }
 
-/* ·ÇÎ¢ĞÅ´úÂë¿é
- * ´úÂë¿é²»»»ĞĞ display:-webkit-box !important;
- * ´úÂë¿é»»ĞĞ display:block;
+/* éå¾®ä¿¡ä»£ç å—
+ * ä»£ç å—ä¸æ¢è¡Œ display:-webkit-box !important;
+ * ä»£ç å—æ¢è¡Œ display:block;
  */
 #nice pre code {
 }
 
-/* ±í¸ñÄÚµÄµ¥Ôª¸ñ
- * ×ÖÌå´óĞ¡ font-size: 16px;
- * ±ß¿ò border: 1px solid #ccc;
- * ÄÚ±ß¾à padding: 5px 10px;
+/* è¡¨æ ¼å†…çš„å•å…ƒæ ¼
+ * å­—ä½“å¤§å° font-size: 16px;
+ * è¾¹æ¡† border: 1px solid #ccc;
+ * å†…è¾¹è· padding: 5px 10px;
  */
 #nice table tr th,
 #nice table tr td {
@@ -203,17 +203,17 @@
   padding-top: 8px;
 }
 
-/* ½Å×¢ÎÄ×Ö */
+/* è„šæ³¨æ–‡å­— */
 #nice .footnote-word {
   color: rgb(60, 112, 198);
 }
 
-/* ½Å×¢ÉÏ±ê */
+/* è„šæ³¨ä¸Šæ ‡ */
 #nice .footnote-ref {
   color: rgb(60, 112, 198);
 }
 
-/* ½Å×¢³¬Á´½ÓÑùÊ½ */
+/* è„šæ³¨è¶…é“¾æ¥æ ·å¼ */
 #nice .footnote-item em {
   color: rgb(60, 112, 198);
   font-size:13px;
@@ -221,8 +221,8 @@
   border-bottom-color:1px dashed rgb(60, 112, 198); 
 }
 
-/* "²Î¿¼×ÊÁÏ"ËÄ¸ö×Ö 
- * ÄÚÈİ content: "²Î¿¼×ÊÁÏ";
+/* "å‚è€ƒèµ„æ–™"å››ä¸ªå­— 
+ * å†…å®¹ content: "å‚è€ƒèµ„æ–™";
  */
 #nice .footnotes-sep:before {
   background-image: none;
@@ -232,41 +232,41 @@
   height: auto;
 }
 
-/* ²Î¿¼×ÊÁÏ±àºÅ */
+/* å‚è€ƒèµ„æ–™ç¼–å· */
 #nice .footnote-num {
   color: rgb(60, 112, 198);
 }
 
-/* ²Î¿¼×ÊÁÏÎÄ×Ö */
+/* å‚è€ƒèµ„æ–™æ–‡å­— */
 #nice .footnote-item p {
   color: rgb(60, 112, 198);
   font-weight:bold;
 }
 
-/* ²Î¿¼×ÊÁÏ³¬Á´½Ó */
+/* å‚è€ƒèµ„æ–™è¶…é“¾æ¥ */
 #nice .footnote-item a {
   color:rgb(60, 112, 198);
 }
 
-/* ²Î¿¼×ÊÁÏ½âÊÍ */
+/* å‚è€ƒèµ„æ–™è§£é‡Š */
 #nice .footnote-item p em {
   font-size:14px;
   font-weight:normal;
   border-bottom:1px dashed rgb(60, 112, 198);
 }
 
-/* ĞĞ¼ä¹«Ê½
- * ×î´ó¿í¶È max-width: 300% !important;
+/* è¡Œé—´å…¬å¼
+ * æœ€å¤§å®½åº¦ max-width: 300% !important;
  */
 #nice .block-equation svg {
   
 }
 
-/* ĞĞÄÚ¹«Ê½*/
+/* è¡Œå†…å…¬å¼*/
 #nice .inline-equation svg {  
 }
 
-/* »¬¶¯Í¼Æ¬
+/* æ»‘åŠ¨å›¾ç‰‡
  */
 #nice .imageflow-img {
   display: inline-block;
