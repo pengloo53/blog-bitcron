@@ -12,21 +12,8 @@ elif request.path.startswith("/tag/")
 	page_title = '标签: %s' % request.offset_path1
 
 mixin make_archive_tip()
-	if posts_count > 210
-		cheers = '太棒了'
-	elif posts_count > 130
-		cheers = '非常好'
-	elif posts_count > 80
-		cheers = '很好'
-	elif posts_count > 50
-		cheers = '好'
-	elif posts_count > 30
-		cheers = 'OK'
-	else
-		cheers = '嗯..'
 	span.archive-move-on
-	span.archive-page-counter= "%s 目前共计 %s 篇日志。继续努力。"%(cheers, posts.counts)
-
+	span.archive-page-counter= "%s 目前共计 %s 篇日志。继续努力。"%('太棒了', posts.counts)
 
 mixin make_post_in_list(post)
     article.post.post-type-normal
